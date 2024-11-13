@@ -21,14 +21,19 @@
 ## perceptron_heuristic.py
 ![alt text](Images/heuristic_2.png)
 * here is the test of the Perceptron Heuristic of what the ouput should be 
+* note i did use an aggressive step and iteraions loops used 
 
 ## perceptron_gradient_descent.py
-![alt text](Images/gradient_descent_1.png)
+![alt text](Images/gradient_descent_10.png)
 * here is the test of the Perceptron Gradient Descent of what the ouput should be 
-![alt text](Images/image_for_1.jpg)
+![alt text](Images/image_for_10.jpg)
 * Bounus here is another image to see the error curve for what the program does 
 
 ## PDF is also Included..
 > There is also a PDF inclueded with more reading materail 
 > to go over thoughts and images more in depth that can be
 > usefull to learn more about what is going on with the programs
+
+## Added Jupiter Notebook..
+> I was able to fix some errors i noiticed in the code to match
+> the slides better in class 

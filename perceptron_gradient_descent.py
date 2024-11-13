@@ -16,6 +16,7 @@ list_end_X =[]
 list_end_Y =[]
 error_guess = 0
 rate_of_change = 0.01
+e_MATH = 2.718281828459045235360287471352
 plt.xlim(-0.1, 1.1) 
 plt.ylim(-0.1, 1.1) 
 
@@ -58,13 +59,14 @@ plt.plot(list_end_X, list_end_Y,color='red')
 
 # *** MAIN funtion here *** -------------------------------
 counter = 0
-loops_to_do = 0
 ERROR_watch = 1
-while loops_to_do < 10:
+while ERROR_watch > 0:
 
     for index in range(size_of_list):
 
         get_z = (weight_1*list_points_X[index]) + (weight_2*list_points_Y[index])  + add_bais
+        get_z = get_z * -1
+        get_z = 1/(1+((e_MATH)**get_z))
 
         if get_z >= 0:
             y_hat_guess = 1
@@ -97,8 +99,6 @@ while loops_to_do < 10:
         counter = counter + 1
         print('(' +  str(counter) + ',' + str(ERROR_watch) +')')
         
-
-    loops_to_do = loops_to_do + 1
 
 # End Line -------------------------------
 new_Y_start = (-1*(weight_1*-1 + add_bais))/weight_2
